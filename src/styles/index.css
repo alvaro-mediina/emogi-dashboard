@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
+
+:root{
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-montserrat);
+}
 
 @theme{
   --color-Falu-red: #6F1D1B;
@@ -6,12 +15,17 @@
   --color-Bistre: #432818;
   --color-Brown: #99582A;
   --color-Peach: #FFE6A7;
+  --color-Gray0: #3c5360;
+  --color-Gray1: #536a77;
+  --color-Gray2: #69818f;
+  --color-Gray3: #8098a6;
+  --color-Gray4: #96afbd;
 }
 
 /* Tailwind Elements */
 
 .title{
-  @apply text-white font-bold mb-4;
+  @apply text-white font-bold mb-4 ;
 }
 
 .subtitle{
@@ -27,11 +41,11 @@
 }
 
 .card-emoji-container{
-  @apply bg-white relative  overflow-hidden object-center w-full h-full object-cover text-8xl flex items-center justify-center;
+  @apply bg-Gray4 relative rounded-lg shadow-lg object-center w-full h-full object-cover text-8xl flex items-center justify-center;
 }
 
 .card-overlay{
-  @apply absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-40 transition-opacity duration-300;
+  @apply absolute inset-0 bg-black rounded-lg shadow-lg flex items-center justify-center opacity-0 hover:opacity-60 transition-opacity duration-300;
 }
 
 .card-content{
