@@ -1,5 +1,39 @@
 @import "tailwindcss";
 
 @theme{
-  --color-mint-500: oklch(0.72 0.11 178);
+  --color-Falu-red: #6F1D1B;
+  --color-Lion: #BB9457;
+  --color-Bistre: #432818;
+  --color-Brown: #99582A;
+  --color-Peach: #FFE6A7;
+}
+
+/* Tailwind Elements */
+
+.title{
+  @apply text-white font-bold mb-4;
+}
+
+.subtitle{
+  @apply text-gray-300 text-lg mb-3;
+}
+
+.description{
+  @apply text-gray-400 text-sm;
+}
+
+.card{
+  @apply bg-gray-800 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105;
+}
+
+.card-emoji-container{
+  @apply bg-white relative  overflow-hidden object-center w-full h-full object-cover text-8xl flex items-center justify-center;
+}
+
+.card-overlay{
+  @apply absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-40 transition-opacity duration-300;
+}
+
+.card-content{
+  @apply p-6;
 }
